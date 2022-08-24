@@ -28,7 +28,7 @@ export default function detail() {
 
 	return (
 		<Layout>
-			<Hero heading="Pengadaan Barang & Jasa" message="PT Mazzoni Java Utama ." />
+			<Hero heading="Informasi Pengadaan" message="PT Mazzoni Java Utama ." />
 
 			<Tabel data={detailData} dataCategory={dataCategory} dataLocation={dataLocation} />
 		</Layout>
