@@ -72,7 +72,7 @@ function ContactForm() {
 	return (
 		<div className="max-w-[1240px] m-auto p-4 h-screen">
 			<h1 className="font-bold text-4xl text-center p-5">Form Data Supplier</h1>
-			<form className="max-w-[600px] m-auto" onSubmit={(e) => onSubmitForm(e)}>
+			<form className="max-w-[600px] m-auto pb-16" onSubmit={(e) => onSubmitForm(e)}>
 				<div className="grid grid-cols-2 gap-2">
 					<input
 						className="border shadow-lg p-3"

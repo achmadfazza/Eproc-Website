@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Slider({ data }) {
 	return (
-		<div id="galery" className="max-w-[1240px] mx-auto mt-5 pb-10">
+		<div id="galery" className="max-w-[1240px] mx-auto mt-5 pb-16">
 			<h1 className="text-4xl font-bold mb-5 text-center">Daftar Pengadaan</h1>
 			<div className="overflow-auto rounded-lg shadow hidden md:block">
 				<table className="w-full">
