@@ -9,7 +9,6 @@ export default function Home() {
 
 	const getGoodsApi = useCallback(async () => {
 		const data = await getGoodsData();
-		console.log(data);
 		setGoodsList(data);
 	});
 

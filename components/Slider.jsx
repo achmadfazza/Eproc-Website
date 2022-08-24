@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Slider({ data }) {
 	return (
@@ -26,11 +27,17 @@ function Slider({ data }) {
 						<tbody className="divide-y divide-gray-100" key={item._id}>
 							<tr className="bg-gray-50">
 								<td className="p-3 text-xl text-gray-700 whitespace-nowrap" id={item._id}>
-									<a className="font-bold text-blue-500 hover:underline" href="#">
-										{index + 1}
-									</a>
+									<Link href={`/detail/` + item._id}>
+										<a className="font-bold text-gray-500 " id={item._id}>
+											{index + 1}
+										</a>
+									</Link>
 								</td>
-								<td className="p-3 text-xl text-gray-700 whitespace-nowrap">{item.name}</td>
+								<Link href={`/detail/` + item._id}>
+									<td className="p-3 text-xl text-gray-700 whitespace-nowrap font-bold hover:text-blue-800 cursor-pointer">
+										{item.name}
+									</td>
+								</Link>
 								<td className="p-3 text-xl text-gray-700 whitespace-nowrap">
 									{item.category.name}
 								</td>
@@ -50,25 +57,25 @@ function Slider({ data }) {
 			{/* mobile */}
 			<div className="grid sm:grid-cols-2 grid-cols-1 gap-4 md:hidden">
 				{data.map((item, index) => (
-					<div className="bg-white space-y-3 p-4 rounded-lg shadow" key={item._id}>
-						<div className="flex items-center space-x-2 text-sm">
-							<div id={item._id}>
-								<a className="text-blue-500 font-bold hover:underline" href="#">
-									{index + 1}
-								</a>
+					<Link href={`/detail/` + item._id} key={item._id}>
+						<div className="bg-white space-y-3 p-4 rounded-lg shadow" id={item._id}>
+							<div className="flex items-center space-x-2 text-sm">
+								<div id={item._id}>
+									<a className="text-blue-500 font-bold hover:underline">{index + 1}</a>
+								</div>
+								<div>
+									<span className="p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-200 rounded-lg bg-opacity-50 mr-1">
+										{item.reservationdate}
+									</span>
+									<span className="p-1.5 text-xs font-medium uppercase tracking-wider text-red-800 bg-red-200 rounded-lg bg-opacity-50 ">
+										{item.endingdate}
+									</span>
+								</div>
 							</div>
-							<div>
-								<span className="p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-200 rounded-lg bg-opacity-50 mr-1">
-									{item.reservationdate}
-								</span>
-								<span className="p-1.5 text-xs font-medium uppercase tracking-wider text-red-800 bg-red-200 rounded-lg bg-opacity-50 ">
-									{item.endingdate}
-								</span>
-							</div>
+							<div className="text-sm text-gray-700">Subject Pengadaan : {item.name}</div>
+							<div className="text-sm font-medium text-black">Lokasi : {item.location.name}</div>
 						</div>
-						<div className="text-sm text-gray-700">Subject Pengadaan : {item.name}</div>
-						<div className="text-sm font-medium text-black">Lokasi : {item.location.name}</div>
-					</div>
+					</Link>
 				))}
 			</div>
 			{/* end mobile */}

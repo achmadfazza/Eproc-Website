@@ -32,7 +32,7 @@ function Navbar() {
 				<Link href="/">
 					<h1
 						style={{ color: `${textColor}` }}
-						className="font-bold text-3xl lg:text-3xl md:text-sm">
+						className="font-bold text-3xl lg:text-3xl md:text-sm cursor-pointer">
 						E-Procurement
 					</h1>
 				</Link>
@@ -44,7 +44,7 @@ function Navbar() {
 						<Link href="/#galery">Daftar Barang</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/about">Tentang</Link>
+						<Link href="/">Tentang</Link>
 					</li>
 				</ul>
 
@@ -71,7 +71,7 @@ function Navbar() {
 							<Link href="/#galery">Daftar Barang</Link>
 						</li>
 						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-							<Link href="/about">Tentang</Link>
+							<Link href="/">Tentang</Link>
 						</li>
 					</ul>
 				</div>
