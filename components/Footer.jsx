@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
 	return (
-		<footer className="absolute p-4 bg-white rounded-lg shadow md:flex md:items-center md:p-6 bottom-0">
+		<footer className="fixed p-4 bg-white rounded-lg shadow md:flex md:items-center md:p-6 bottom-0">
 			<span className="text-md text-black sm:text-center hover:text-gray-800">
 				© 2022{" "}
 				<a href="https://google.com/" className="hover:underline" target="_blank">
