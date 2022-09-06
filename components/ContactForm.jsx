@@ -72,10 +72,10 @@ function ContactForm() {
 	return (
 		<div className="max-w-[1240px] m-auto p-4 h-screen">
 			<h1 className="font-bold text-4xl text-center p-5">Form Data Supplier</h1>
-			<form className="max-w-[600px] m-auto pb-16" onSubmit={(e) => onSubmitForm(e)}>
+			<form className="max-w-[600px] m-auto pb-16 text-black" onSubmit={(e) => onSubmitForm(e)}>
 				<div className="grid grid-cols-2 gap-2">
 					<input
-						className="border shadow-lg p-3"
+						className="border shadow-xl p-3"
 						id="name"
 						name="name"
 						type="text"
@@ -85,7 +85,7 @@ function ContactForm() {
 						required
 					/>
 					<input
-						className="border shadow-lg p-3"
+						className="border shadow-xl p-3"
 						id="email"
 						name="email"
 						type="email"
@@ -96,7 +96,7 @@ function ContactForm() {
 					/>
 				</div>
 				<input
-					className="border shadow-lg p-3 w-full my-2"
+					className="border shadow-xl p-3 w-full my-2"
 					id="company"
 					name="company"
 					type="text"
@@ -106,7 +106,7 @@ function ContactForm() {
 					required
 				/>
 				<input
-					className="border shadow-lg p-3 w-full my-2"
+					className="border shadow-xl p-3 w-full my-2"
 					id="npwp"
 					name="npwp"
 					type="text"
@@ -116,7 +116,7 @@ function ContactForm() {
 					required
 				/>
 				<input
-					className="border shadow-lg p-3 w-full my-2"
+					className="border shadow-xl p-3 w-full my-2"
 					id="telephone"
 					name="telephone"
 					type="text"
@@ -126,7 +126,7 @@ function ContactForm() {
 					required
 				/>
 				<textarea
-					className="border shadow-lg p-3 w-full"
+					className="border shadow-xl p-3 w-full"
 					id="address"
 					name="address"
 					cols="30"
@@ -136,7 +136,7 @@ function ContactForm() {
 					placeholder="Alamat Perusahaan"
 					required></textarea>
 				<textarea
-					className="border shadow-lg p-3 w-full"
+					className="border shadow-xl p-3 w-full"
 					id="message"
 					name="message"
 					cols="30"
@@ -147,7 +147,7 @@ function ContactForm() {
 					required></textarea>
 				<button
 					type="submit"
-					className="border rounded-md shadow-lg p-3 w-full mt-2 font-bold text-xl">
+					className="border rounded-md shadow-xl p-3 w-full mt-2 font-bold text-xl">
 					Kirim
 				</button>
 				<div className="pt-4 text-bold">

@@ -6,7 +6,7 @@ function Tabel({ data, dataLocation, dataCategory }) {
 		<div className="max-w-[768px] mx-auto mt-28 pb-10">
 			<h1 className="text-4xl font-bold mb-5 text-center">Informasi Pengadaan</h1>
 			<div className="overflow-auto rounded-lg shadow ">
-				<table className="w-full text-left mt-5">
+				<table className="w-full text-left mt-5 ">
 					<tbody className="text-black ">
 						<tr>
 							<th className="p-1 rounded-lg shadow ">Nomer ID</th>
