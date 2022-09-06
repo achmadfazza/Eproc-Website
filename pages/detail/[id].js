@@ -1,5 +1,3 @@
-import Hero from "../../components/Hero";
-import Layout from "../../components/Layout";
 import Tabel from "../../components/Tabel";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useState } from "react";
@@ -27,10 +25,8 @@ export default function detail() {
 	});
 
 	return (
-		<Layout>
-			<Hero heading="Informasi Pengadaan" message="PT Mazzoni Java Utama ." />
-
+		<>
 			<Tabel data={detailData} dataCategory={dataCategory} dataLocation={dataLocation} />
-		</Layout>
+		</>
 	);
 }

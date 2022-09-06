@@ -3,7 +3,7 @@ import Buttons from "./Buttons";
 
 function Tabel({ data, dataLocation, dataCategory }) {
 	return (
-		<div className="max-w-[768px] mx-auto mt-5 pb-10">
+		<div className="max-w-[768px] mx-auto mt-28 pb-10">
 			<h1 className="text-4xl font-bold mb-5 text-center">Informasi Pengadaan</h1>
 			<div className="overflow-auto rounded-lg shadow ">
 				<table className="w-full text-left mt-5">

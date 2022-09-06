@@ -44,7 +44,7 @@ function Navbar() {
 						<Link href="/#galery">Daftar Barang</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/">Tentang</Link>
+						<Link href="/login">Login</Link>
 					</li>
 				</ul>
 
