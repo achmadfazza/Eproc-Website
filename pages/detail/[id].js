@@ -25,8 +25,8 @@ export default function detail() {
 	});
 
 	return (
-		<>
+		<div className="max-w-2xl mx-auto mt-28 pb-10  ">
 			<Tabel data={detailData} dataCategory={dataCategory} dataLocation={dataLocation} />
-		</>
+		</div>
 	);
 }
